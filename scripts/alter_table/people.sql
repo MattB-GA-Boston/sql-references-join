@@ -4,3 +4,7 @@
 -- ALTER TABLE people ALTER COLUMN middle_initial TYPE text;
 
 -- ALTER TABLE people RENAME COLUMN middle_initial TO middle_name;
+
+ALTER TABLE people
+ADD COLUMN address_id INTEGER REFERENCES addresses(id)
+;

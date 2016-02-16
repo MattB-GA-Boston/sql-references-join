@@ -1,0 +1,2 @@
+-- bulk load addresses
+\copy addresses(no, name) FROM 'data/addresses.csv' WITH (HEADER true, FORMAT csv)
